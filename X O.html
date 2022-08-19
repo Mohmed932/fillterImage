@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>X O</title>
+  <link rel="stylesheet" href="main.css"/>
+</head>
+<body>
+  <div class="content">
+    <div class="left">
+      <div class="left-img">
+        <img id="img"/>
+      </div>
+      <div class="left-Upload">
+        <label for="file" class="upload">Upload</label>
+        <input type="file" id="file"/>
+      </div>
+    </div>
+    <div class="right">
+      <ul>
+        <li>
+          <input type="range" for="saturate" id="saturate" value="100" min="0" max="200"/>
+          <span id="saturate">saturate</span>
+        </li>
+        <li>
+          <input type="range" for="contrast" id="contrast" value="100" min="0" max="200"/>
+          <span id="contrast">contrast</span>
+        </li>
+        <li>
+          <input type="range" for="brightness" id="brightness" value="100" min="0" max="200"/>
+          <span id="brightness">brightness</span>
+        </li>
+        <li>
+          <input type="range" for="sepia" id="sepia" value="0" min="0" max="200"/>
+          <span id="sepia">sepia</span>
+        </li>
+        <li>
+          <input type="range" for="grayscale" id="grayscale" value="0" min="0" max="1" step=".1"/>
+          <span id="grayscale">grayscale</span>
+        </li>
+        <li>
+          <input type="range" for="blur" id="blur" value="0" min="0" max="10" step=".1"/>
+          <span id="blur">blur</span>
+        </li>
+        <li>
+          <input type="range" for="hue-rotate" id="hue-rotate" value="0" min="0" max="350"/>
+          <span id="hue-rotate">hue-rotate</span>
+        </li>
+        <li class="divider">
+          <a download="true" id="download">Download</a>
+          <span id="Reset" onclick="resultValue()">Reset</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
